@@ -3,8 +3,8 @@ name: Release
 # yamllint disable-line rule:truthy
 on:
   push:
-    tags:
-      - module-parent-*
+    branches:
+      - release/**
 jobs:
   release:
     uses: dropwizard/workflows/.github/workflows/release.yml@main
