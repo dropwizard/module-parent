@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.dropwizard.modules</groupId>
   <artifactId>module-parent</artifactId>
-  <version>3.0.0-SNAPSHOT</version>
+  <version>3.0.0-rc.1</version>
   <packaging>pom</packaging>
   <name>Dropwizard Module Parent</name>
   <description>Common baseline for Dropwizard modules</description>
@@ -19,7 +19,7 @@
     <developerConnection>scm:git:git@github.com:dropwizard/${repository.name}.git</developerConnection>
     <connection>scm:git:https://github.com/dropwizard/${repository.name}.git</connection>
     <url>https://github.com/dropwizard/${repository.name}</url>
-    <tag>HEAD</tag>
+    <tag>module-parent-3.0.0-rc.1</tag>
   </scm>
   <organization>
     <name>Dropwizard</name>
@@ -55,7 +55,7 @@
     <maven.compiler.release>11</maven.compiler.release>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
-    <project.build.outputTimestamp>2023-11-06T17:09:21Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-12-07T23:52:22Z</project.build.outputTimestamp>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <sonar.organization>dropwizard</sonar.organization>
