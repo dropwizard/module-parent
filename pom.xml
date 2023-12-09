@@ -15,7 +15,7 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  <scm>
+  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <developerConnection>scm:git:git@github.com:dropwizard/${repository.name}.git</developerConnection>
     <connection>scm:git:https://github.com/dropwizard/${repository.name}.git</connection>
     <url>https://github.com/dropwizard/${repository.name}</url>
