@@ -61,7 +61,7 @@
     <sonar.organization>dropwizard</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <nexus.url>https://s01.oss.sonatype.org</nexus.url>
-    <dropwizard.version>2.1.11</dropwizard.version>
+    <dropwizard.version>2.1.12</dropwizard.version>
     <repository.name>${project.artifactId}</repository.name>
     <gpg.keyname>EDA86E9FB607B5FC9223FB767D4868B53E31E7AD</gpg.keyname>
   </properties>
