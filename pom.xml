@@ -240,6 +240,7 @@
             <configuration>
               <signer>bc</signer>
               <bestPractices>true</bestPractices>
+            </configuration>
             <executions>
               <execution>
                 <id>sign-artifacts</id>
