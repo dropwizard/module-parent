@@ -63,7 +63,6 @@
     <nexus.url>https://s01.oss.sonatype.org</nexus.url>
     <dropwizard.version>4.0.7</dropwizard.version>
     <repository.name>${project.artifactId}</repository.name>
-    <gpg.keyname>EDA86E9FB607B5FC9223FB767D4868B53E31E7AD</gpg.keyname>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -238,6 +237,10 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
+            <configuration>
+              <signer>bc</signer>
+              <bestPractices>true</bestPractices>
+            </configuration>
             <executions>
               <execution>
                 <id>sign-artifacts</id>
