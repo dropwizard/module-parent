@@ -239,7 +239,6 @@
             <artifactId>maven-gpg-plugin</artifactId>
             <configuration>
               <signer>bc</signer>
-              <bestPractices>true</bestPractices>
             </configuration>
             <executions>
               <execution>
