@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.dropwizard.modules</groupId>
   <artifactId>module-parent</artifactId>
-  <version>4.0.4-SNAPSHOT</version>
+  <version>5.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Dropwizard Module Parent</name>
   <description>Common baseline for Dropwizard modules</description>
@@ -52,7 +52,7 @@
     </repository>
   </distributionManagement>
   <properties>
-    <maven.compiler.release>11</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <project.build.outputTimestamp>2024-08-28T19:53:39Z</project.build.outputTimestamp>
@@ -61,7 +61,7 @@
     <sonar.organization>dropwizard</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <nexus.url>https://s01.oss.sonatype.org</nexus.url>
-    <dropwizard.version>4.0.12</dropwizard.version>
+    <dropwizard.version>5.0.0-rc.1</dropwizard.version>
     <repository.name>${project.artifactId}</repository.name>
   </properties>
   <dependencyManagement>
