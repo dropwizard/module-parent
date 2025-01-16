@@ -269,6 +269,7 @@
               <serverId>ossrh</serverId>
               <nexusUrl>${nexus.url}</nexusUrl>
               <autoReleaseAfterClose>true</autoReleaseAfterClose>
+              <stagingProgressTimeoutMinutes>10</stagingProgressTimeoutMinutes>
             </configuration>
             <executions>
               <execution>
