@@ -59,8 +59,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <sonar.organization>dropwizard</sonar.organization>
+    <nexus.url>https://central.sonatype.com</nexus.url>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    <nexus.url>https://ossrh-staging-api.central.sonatype.com</nexus.url>
     <dropwizard.version>5.0.0-rc.3</dropwizard.version>
     <repository.name>${project.artifactId}</repository.name>
   </properties>
@@ -154,9 +154,9 @@
           <version>2.9.1</version>
         </plugin>
         <plugin>
-          <groupId>org.sonatype.plugins</groupId>
-          <artifactId>nexus-staging-maven-plugin</artifactId>
-          <version>1.7.0</version>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>0.8.0</version>
           <extensions>true</extensions>
         </plugin>
         <plugin>
@@ -263,20 +263,20 @@
             </executions>
           </plugin>
           <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+            <extensions>true</extensions>
             <configuration>
-              <serverId>ossrh</serverId>
-              <nexusUrl>${nexus.url}</nexusUrl>
-              <autoReleaseAfterClose>true</autoReleaseAfterClose>
-              <stagingProgressTimeoutMinutes>10</stagingProgressTimeoutMinutes>
+              <publishingServerId>ossrh</publishingServerId>
+              <autoPublish>true</autoPublish>
+              <waitUntil>published</waitUntil>
             </configuration>
             <executions>
               <execution>
                 <id>nexus-deploy</id>
                 <phase>deploy</phase>
                 <goals>
-                  <goal>deploy</goal>
+                  <goal>publish</goal>
                 </goals>
               </execution>
             </executions>
