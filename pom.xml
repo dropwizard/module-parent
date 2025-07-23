@@ -42,13 +42,9 @@
     <url>https://github.com/dropwizard/${repository.name}/issues</url>
   </issueManagement>
   <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>${nexus.url}/repository/maven-snapshots/</url>
-    </snapshotRepository>
     <repository>
       <id>ossrh</id>
-      <url>${nexus.url}/service/local/staging/deploy/maven2/</url>
+      <name>Sonatype Central Portal Repository</name>
     </repository>
   </distributionManagement>
   <properties>
@@ -271,15 +267,6 @@
               <autoPublish>true</autoPublish>
               <waitUntil>published</waitUntil>
             </configuration>
-            <executions>
-              <execution>
-                <id>nexus-deploy</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>publish</goal>
-                </goals>
-              </execution>
-            </executions>
           </plugin>
         </plugins>
       </build>
