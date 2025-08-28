@@ -41,12 +41,6 @@
     <system>GitHub Issues</system>
     <url>https://github.com/dropwizard/${repository.name}/issues</url>
   </issueManagement>
-  <distributionManagement>
-    <repository>
-      <id>ossrh</id>
-      <name>Sonatype Central Portal Repository</name>
-    </repository>
-  </distributionManagement>
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
